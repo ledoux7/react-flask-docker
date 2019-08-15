@@ -8,7 +8,6 @@ Flask REST API
 MYSQL
 
 
-
 ## Run
 ```
 docker-compose up --build
