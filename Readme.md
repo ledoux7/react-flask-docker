@@ -8,7 +8,7 @@ MYSQL
 
 
 
-### Run
+## Run
 
 To run it do:
 ```
