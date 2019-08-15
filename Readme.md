@@ -9,8 +9,6 @@ MYSQL
 
 
 ## Run
-
-To run it do:
 ```
 docker-compose up --build
 ```
