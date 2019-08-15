@@ -1,7 +1,13 @@
+## Docker
 ### Frontend
 ReactJS with D3.js
-### Backend Flask REST API
-### MYSQL
+### Backend 
+Flask REST API
+### Database
+MYSQL
+
+
+
 ### Run
 
 To run it do:
