@@ -4,7 +4,6 @@ backend/venv
 backend/env
 backend/api/__pycache__
 /env
-/data
 .ionide
 .vs
 obj
