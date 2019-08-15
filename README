@@ -1,4 +1,5 @@
-## Docker
+## Web App Boilerplate
+ReactJS web app running inside a docker container.
 ### Frontend
 ReactJS with D3.js
 ### Backend 
@@ -19,4 +20,6 @@ React app will be on http://localhost:3000/
 And the API will be at http://localhost:5000/api/players
 
 The Database user and password is "root" and is on port 32000 for remote and 3306 internally.
+
+Change ports in docker-compose.yml
 
