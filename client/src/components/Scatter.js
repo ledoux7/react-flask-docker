@@ -3,9 +3,6 @@ import * as d3 from "d3";
 import { scaleLinear,scaleOrdinal } from "d3-scale";
 
 
-
-
-
 class BarChart extends React.Component {
     render() {
       return (
