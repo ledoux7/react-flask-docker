@@ -11,11 +11,9 @@ import * as d3 from 'd3';
 // import Datapoint from "./Datapoint";
 // import DonutBarChart from "./DonutBarChart";
 
-import BarChart from '../BarChart'
+// import BarChart from '../Shared-components/BarChart'
 
-import Dropdown from '../Shared-components/Dropdown';
-import Loading from '../Shared-components/Loading';
-import ScatterPlot from '../Main-components/Laptimes-ScatterPlot'
+
 import { CONFIG } from '../config.js';
 //import WorldMap from './WorldMap'
 // import Scatterplot from './Scatterplot1'
@@ -29,7 +27,7 @@ class Main extends Component {
 		players: [],
 		pp: [],
 		bardata: [12,5,6,6,9,10],
-		width: 400,
+		width: 200,
 		height: 150,
 		id: "root",
 		error : null,
@@ -104,9 +102,7 @@ class Main extends Component {
    render() {
 	//const { data } = this.state;
 	 const players = this.state.players.map((player, index) => <li key={index}>{player.firstname} {player.lastname}{player.PTS}</li>);
-	const ptss = this.state.players.map(function (p) {return p.PTS
-		
-	})
+	const pts = this.state.players.map(function (p) {return p.PTS})
 
 	
 

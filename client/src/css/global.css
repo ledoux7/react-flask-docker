@@ -33,6 +33,25 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.barchart{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+#chart {
+  background-color: #F5F2EB;
+  border: 30px solid #CCC;
+}
+.classics{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
 .App {
   display: -webkit-box;
   display: -ms-flexbox;

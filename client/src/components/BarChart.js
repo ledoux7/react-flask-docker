@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './App.css'
+// import './App.css'
 import { scaleLinear } from "d3-scale"
 import { max } from 'd3-array'
 import { select } from 'd3-selection'
@@ -37,14 +37,26 @@ class BarChart extends Component {
       .selectAll('rect')
       .data(this.props.data)
       .style('fill', '#fe9922')
-      .attr('x', (d,i) => i * 25)
+      .attr('x', (d,i) => i * 30)
       .attr('y', d => this.props.size[1] - yScale(d))
       .attr('height', d => yScale(d))
-      .attr('width', 25)
+      .attr('width', 26)
+
+
+      select(node)
+         .selectAll('text')
+
+            .data(this.props.data)
+            .enter()
+            .append("text")
+            .text((d) => d)
+            .attr("x", (d, i) => i * 30)
+            .attr("y", (d, i) => this.props.size[1] - yScale(d) +16)
+
    }
 render() {
       return <svg ref={node => this.node = node}
-      width={500} height={500}>
+      width={this.props.size[0]+20} height={this.props.size[1]+20}>
       </svg>
    }
 }
