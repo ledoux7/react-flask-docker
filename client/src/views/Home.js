@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BarChart from '../components/BarChart'
 import { CONFIG } from '../config.js';
+import * as d3 from "d3";
 
 
 class Main1 extends Component {
