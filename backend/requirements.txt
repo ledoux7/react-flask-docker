@@ -1,0 +1,8 @@
+Flask
+flask-restful
+flask-cors
+flask_sqlalchemy
+pymysql
+mysql-connector
+numpy
+pandas

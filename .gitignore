@@ -1,0 +1,10 @@
+client/node_modules
+.idea
+backend/venv
+backend/env
+backend/api/__pycache__
+/env
+/data
+.ionide
+.vs
+obj
