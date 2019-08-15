@@ -10,7 +10,3 @@ from models import *
 #def index():
 #    return render_template("index.html")
 
-#@view_blueprint.route('/results', methods=['GET'])
-#def results():
-#    results_from_db = db.session.query(Results.id).all()
-#    return render_template('results.html', results_from_db=results_from_db)

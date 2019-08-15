@@ -13,19 +13,18 @@ def create_app(config):
     register_extensions(app)
     return app
 
+# start api
 def register_blueprint(app):
-    #app.register_blueprint(view_blueprint)
     app.register_blueprint(players_blueprint)
-    #app.register_blueprint(results_blueprint)
+    
 
 def register_extensions(app):
-    #api.init_app(app)
     db.init_app(app)
 
-app = create_app(Config)
 
 
-# Run the application
+
+# run
 if __name__ == '__main__':
-    app = create_app(Config)
+    app = create_app(Config) # database config
     app.run(host='0.0.0.0', port=80, debug=True, threaded=True)

@@ -2,24 +2,10 @@
 from flask import json, jsonify, Blueprint
 from extensions import db
 from models import *
-#from .models import Player as PlayerModel, to_dict
-#from backend.utils.munging import *
+from sqlalchemy.ext.declarative import DeclarativeMeta
 
 players_blueprint = Blueprint('players', __name__)
-results_blueprint = Blueprint('results', __name__)
-#qualifying_blueprint = Blueprint('qualifying', __name__)
-#laptimes_blueprint = Blueprint('laptimes', __name__)
-#pitstops_blueprint = Blueprint('pitstops', __name__)
-#tyre_blueprint = Blueprint('tyre', __name__)
 
-@results_blueprint.route('/api/results', methods=['GET'])
-def results():
-    results = db.session.query(Results).all()
-    arr = []
-    for result in results:
-        arr.append(result.serialize())
-
-    return jsonify({"data": arr})
 
 @players_blueprint.route('/api/players', methods=['GET'])
 def players():
@@ -32,3 +18,18 @@ def players():
     #    arr.append(player.serialize())
 
     #return jsonify({"data": arr})
+
+def to_dict(obj):
+    if isinstance(obj.__class__, DeclarativeMeta):
+        # an SQLAlchemy class
+        fields = {}
+        for field in [x for x in dir(obj) if not x.startswith('_') and x != 'metadata']:
+            data = obj.__getattribute__(field)
+            try:
+                json.dumps(data)  # this will fail on non-encodable values, like other classes
+                if data is not None:
+                    fields[field] = data
+            except TypeError:
+                pass
+        # a json-encodable dict
+        return fields
