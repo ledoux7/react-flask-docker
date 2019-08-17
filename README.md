@@ -3,7 +3,7 @@ ReactJS web app running inside a docker container.
 
 ![Screenshot](template.png)
 ### Frontend
-ReactJS with D3.js
+ReactJS with simple D3.js barchart included.
 ### Backend 
 Flask REST API
 ### Database
