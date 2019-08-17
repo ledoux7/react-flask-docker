@@ -53,7 +53,7 @@ class Main1 extends Component {
        
         return (
             <div className="header">
-                <div className="wrapper">
+                <div className="wrapper" style={{display: 'flex',  justifyContent:'center'}}>
                   <h1>Hello world</h1>
                     {/* {Header} */}
                 </div>
