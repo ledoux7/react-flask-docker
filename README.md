@@ -1,5 +1,7 @@
 ## Web App Boilerplate
 ReactJS web app running inside a docker container.
+
+![Screenshot](template.png)
 ### Frontend
 ReactJS with D3.js
 ### Backend 
