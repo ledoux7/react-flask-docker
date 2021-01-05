@@ -6,7 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-solid-svg-icons": "^5.4.0",
     "@fortawesome/react-fontawesome": "^0.1.3",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
